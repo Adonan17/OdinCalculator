@@ -7,12 +7,49 @@ $fourth-color:#596e79
 
 .calculator
     display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
     height: 500px
     width: 300px
-    border-radius: 10px
     border: 5px solid $fourth-color
-    background: linear-gradient(0deg, $third-color 0%, $second-color 100%)
-    
+    background-color: $second-color 
+    .screen
+        height: 150px
+        width: 275px
+        border-radius: 10px
+        background-color: $first-color
+        display: flex
+        flex-direction: column
+        .upperscreen
+            height: 45px
+            width: 90%
+            font: 30px $third-color
+            display: flex
+            justify-content: end
+        .underScreen
+            height: 95px
+            width: 90%
+            font: 45px $third-color
+            display: flex
+            justify-content: end
+    .keys
+        height: 200px
+        width: 275px
+        display: grid
+        grid-template-columns: repeat(4, 3fr)
+        grid-gap: 10px
+        grid-auto-rows: minmax(40px, auto)
+        .key
+            display: flex
+            border-radius: 10px
+            background: $first-color
+            justify-content: center
+            align-items: center
+            color: $fourth-color
+            font-size: 20px
+            font-weight: bold
+        
 
 /* RESPONSIVE */
 @media (max-width: 576px)
