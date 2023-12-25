@@ -12,11 +12,24 @@ body {
   background: linear-gradient(0deg, #dfd3c3 0%, #c7b198 100%);
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* HEADER */
 /* RESPONSIVE */
 /* MAIN */
+.calculator {
+  display: flex;
+  height: 500px;
+  width: 300px;
+  border-radius: 10px;
+  border: 5px solid #596e79;
+  background: linear-gradient(0deg, #c7b198 0%, #dfd3c3 100%);
+}
+
 /* RESPONSIVE */
 /* FOOTER */
 /* RESPONSIVE */
