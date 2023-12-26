@@ -18,3 +18,67 @@ const clear = document.getElementById('clear')
 const del = document.getElementById('delete')
 const upper = document.getElementById('upperScreen')
 const under = document.getElementById('underScreen')
+
+one.addEventListener('click', () => {
+    upper.innerHTML += 1
+})
+
+two.addEventListener('click', () => {
+    upper.innerHTML += 2
+})
+
+three.addEventListener('click', () => {
+    upper.innerHTML += 3
+})
+
+four.addEventListener('click', () => {
+    upper.innerHTML += 4
+})
+
+five.addEventListener('click', () => {
+    upper.innerHTML += 5
+})
+
+six.addEventListener('click', () => {
+    upper.innerHTML += 6
+})
+
+seven.addEventListener('click', () => {
+    upper.innerHTML += 7
+})
+
+eight.addEventListener('click', () => {
+    upper.innerHTML += 8
+})
+
+nine.addEventListener('click', () => {
+    upper.innerHTML += 9
+})
+
+zero.addEventListener('click', () => {
+    upper.innerHTML += 0
+})
+
+add.addEventListener('click', () => {
+    upper.innerHTML += '+'
+})
+
+substract.addEventListener('click', () => {
+    upper.innerHTML += '-'
+})
+
+divide.addEventListener('click', () => {
+    upper.innerHTML += '/'
+})
+
+multiply.addEventListener('click', () => {
+    upper.innerHTML += 'x'
+})
+
+equal.addEventListener('click', () => {
+})
+
+clear.addEventListener('click', () => {
+    upper.innerHTML = ""
+    under.innerHTML = ""
+})
