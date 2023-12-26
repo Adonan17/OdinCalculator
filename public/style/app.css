@@ -24,34 +24,77 @@ body {
 .calculator {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10px;
   align-items: center;
-  height: 500px;
+  height: 450px;
   width: 300px;
   border: 5px solid #596e79;
   background-color: #dfd3c3;
 }
 .calculator .screen {
-  height: 150px;
+  height: 125px;
   width: 275px;
   border-radius: 10px;
   background-color: #f0ece2;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.calculator .screen .upperscreen {
+.calculator .screen .upperScreen {
   height: 45px;
   width: 90%;
-  font: 30px #c7b198;
+  font-size: 30px;
+  font-weight: bold;
+  color: #c7b198;
   display: flex;
   justify-content: end;
+  align-items: end;
 }
 .calculator .screen .underScreen {
   height: 95px;
   width: 90%;
-  font: 45px #c7b198;
+  font-size: 45px;
+  font-weight: bold;
+  color: #c7b198;
   display: flex;
   justify-content: end;
+  align-items: end;
+}
+.calculator .clearAndDelete {
+  display: flex;
+  height: 50px;
+  width: 275px;
+  align-items: center;
+  justify-content: space-between;
+}
+.calculator .clearAndDelete .clear {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #f0ece2;
+  font-weight: bold;
+  color: #596e79;
+  transition: 0.2s;
+}
+.calculator .clearAndDelete .delete {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #f0ece2;
+  font-weight: bold;
+  color: #596e79;
+  transition: 0.2s;
+}
+.calculator .clearAndDelete .clear:hover, .calculator .clearAndDelete .delete:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px #c7b198;
 }
 .calculator .keys {
   height: 200px;
@@ -70,9 +113,11 @@ body {
   color: #596e79;
   font-size: 20px;
   font-weight: bold;
+  transition: 0.2s;
 }
 .calculator .keys .key:hover {
   cursor: pointer;
+  box-shadow: 3px 3px #c7b198;
 }
 
 /* RESPONSIVE */

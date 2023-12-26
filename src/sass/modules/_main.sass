@@ -8,31 +8,70 @@ $fourth-color:#596e79
 .calculator
     display: flex
     flex-direction: column
-    justify-content: space-around
+    justify-content: center
+    gap: 10px
     align-items: center
-    height: 500px
+    height: 450px
     width: 300px
     border: 5px solid $fourth-color
     background-color: $second-color 
     .screen
-        height: 150px
+        height: 125px
         width: 275px
         border-radius: 10px
         background-color: $first-color
         display: flex
         flex-direction: column
-        .upperscreen
+        align-items: center
+        .upperScreen
             height: 45px
             width: 90%
-            font: 30px $third-color
+            font-size: 30px
+            font-weight: bold
+            color: $third-color
             display: flex
             justify-content: end
+            align-items: end
         .underScreen
             height: 95px
             width: 90%
-            font: 45px $third-color
+            font-size: 45px
+            font-weight: bold
+            color: $third-color
             display: flex
             justify-content: end
+            align-items: end
+    .clearAndDelete
+        display: flex
+        height: 50px
+        width: 275px
+        align-items: center
+        justify-content: space-between
+        .clear 
+            width: 130px
+            height: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 10px
+            background-color: $first-color
+            font-weight: bold 
+            color: $fourth-color
+            transition: 0.2s
+        .delete
+            width: 130px
+            height: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 10px
+            background-color: $first-color
+            font-weight: bold 
+            color: $fourth-color
+            transition: 0.2s
+        .clear:hover, .delete:hover
+            cursor: pointer
+            box-shadow: 3px 3px $third-color
     .keys
         height: 200px
         width: 275px
@@ -49,9 +88,10 @@ $fourth-color:#596e79
             color: $fourth-color
             font-size: 20px
             font-weight: bold
+            transition: 0.2s
         .key:hover
             cursor: pointer
-        
+            box-shadow: 3px 3px $third-color
 
 /* RESPONSIVE */
 @media (max-width: 576px)
