@@ -278,6 +278,11 @@ function pressKey(event) {
             break;
         case 'delete':
             under.innerHTML = under.innerHTML.slice(0, -1);
+            if (upper.innerHTML == "") {
+                first = first.slice(0, -1);
+            } else {
+                second = second.slice(0, -1);
+            }
             break;
         default:
             // Handle default case
