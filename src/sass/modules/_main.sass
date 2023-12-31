@@ -23,6 +23,7 @@ $fourth-color:#596e79
         display: flex
         flex-direction: column
         align-items: center
+        overflow: hidden
         .upperScreen
             height: 45px
             width: 90%
@@ -47,7 +48,7 @@ $fourth-color:#596e79
         width: 275px
         align-items: center
         justify-content: space-between
-        .clear 
+        #clear 
             width: 130px
             height: 40px
             display: flex
@@ -58,7 +59,7 @@ $fourth-color:#596e79
             font-weight: bold 
             color: $fourth-color
             transition: 0.2s
-        .delete
+        #delete
             width: 130px
             height: 40px
             display: flex
@@ -69,7 +70,7 @@ $fourth-color:#596e79
             font-weight: bold 
             color: $fourth-color
             transition: 0.2s
-        .clear:hover, .delete:hover
+        #clear:hover, #delete:hover
             cursor: pointer
             box-shadow: 3px 3px $third-color
     .keys

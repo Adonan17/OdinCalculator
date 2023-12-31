@@ -40,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 .calculator .screen .upperScreen {
   height: 45px;
@@ -68,7 +69,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.calculator .clearAndDelete .clear {
+.calculator .clearAndDelete #clear {
   width: 130px;
   height: 40px;
   display: flex;
@@ -80,7 +81,7 @@ body {
   color: #596e79;
   transition: 0.2s;
 }
-.calculator .clearAndDelete .delete {
+.calculator .clearAndDelete #delete {
   width: 130px;
   height: 40px;
   display: flex;
@@ -92,7 +93,7 @@ body {
   color: #596e79;
   transition: 0.2s;
 }
-.calculator .clearAndDelete .clear:hover, .calculator .clearAndDelete .delete:hover {
+.calculator .clearAndDelete #clear:hover, .calculator .clearAndDelete #delete:hover {
   cursor: pointer;
   box-shadow: 3px 3px #c7b198;
 }
